@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take A Survey</title>
+</head>
+<body>
+    <div style="text-align: center;margin-top: 80px;">
+        <h1>Survey Form</h1>
+        <form action="" method="">
+            Name : <input type="text" onfocus="document.getElementById('nameToolTip').style.display='inline-block'" onblur="document.getElementById('nameToolTip').style.display='none'" placeholder="Name">
+            <span id="nameToolTip" style="display:none; color: aqua;text-shadow: 1px 1px black;">Enter Your Name !!!</span>
+            <br><br>
+            Gender : <input type="radio" name="gender" >Male<input type="radio" name="gender">Female
+            <br><br>
+            Phone no : <input type="number" name="number" onfocus="document.getElementById('numberToolTip').style.display='inline-block'" onblur="document.getElementById('numberToolTip').style.display='none'" placeholder="Phone Number">
+            <span id="numberToolTip" style="display:none; color: aqua;text-shadow: 1px 1px black;">Enter 10 digit phone number !!!</span>
+            <br><br>
+            Rating <select name="rating">
+                        <option value="5" selected>5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+              <br><br>
+              When would you like to visit ? <input type="date"/>
+
+              <br><br>
+              <input type="reset"/>
+              <input type="submit" value="Submit"  onclick="Submit(event)">
+        </form>    
+    </div>
+    
+</body>
+<script>
+    function Submit(event){
+        event.preventDefault()
+        var x=confirm("Are you sure you want to submit?")
+        if(x){
+            alert("Form Submitted Successfully !")
+        }
+        else{
+            alert("Form Could Not Be Submitted !")
+        }
+    }
+</script>
+</html>

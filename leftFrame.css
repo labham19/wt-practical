@@ -1,0 +1,34 @@
+body{
+    background-image: url('Delhi2.jpg');
+    background-size: cover;
+    margin: 0;
+}
+#heading{
+    margin: 0%;
+    width: 100%;
+}
+#heading h2{
+    padding: 30px;
+    background-color: rgb(00, 00, 00,0.8);
+    text-align: center;
+    color: bisque;
+}
+ul{
+    width: 100%;
+    background-color: rgb(00, 00, 00,0.6);
+}
+li{  
+    width: 100%;
+    cursor: pointer;
+    padding:20px;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+    font-size: large;
+    color: chartreuse;
+}
+li:hover{
+    background-color: rgb(00, 00, 00,0.7);
+}

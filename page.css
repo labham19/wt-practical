@@ -1,0 +1,11 @@
+body{
+ background-size: cover;
+}
+
+.header{
+    text-align: center; background-color: rgb(00,00,00,0.5);color: yellow;
+}
+
+.info{
+    text-align: center; width: 30%;
+}
